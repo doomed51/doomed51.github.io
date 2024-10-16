@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 ---
 
 All the ideas.
