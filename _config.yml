@@ -20,4 +20,8 @@ plugins:
 
 # link only to specific pages in the header 
 header_pages:
+  - index.md
   - about.md
+
+minima: 
+  skin: auto
