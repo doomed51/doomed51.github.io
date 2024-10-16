@@ -1,6 +1,7 @@
-remote_theme: minima #pages-themes/slate@v0.2.0
+#remote_theme: minima #pages-themes/slate@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
+
 title: Rachit's Catalogue
 description: A rolodex of ideas.
-theme: minima #jekyll-theme-slate
+theme: minima
