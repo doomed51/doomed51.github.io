@@ -3,5 +3,17 @@
 #- jekyll-remote-theme # add this line to the plugins list if you already have one
 
 title: Rachit's Catalogue
-description: A rolodex of ideas.
-theme: minima
+
+author: 
+  name: Rachit Shankar
+  email: rachitshankar@gmail.com
+
+description: > 
+  A peronsnal site to keep track of thoughts and evolve them as I learn more things.
+
+# theme: minima
+remote_theme: jekyll/minima 
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
