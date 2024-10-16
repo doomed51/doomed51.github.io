@@ -1,8 +1,9 @@
 ---
+title: Home
 layout: default
 ---
 
-The only anthology that is mine. 
+All the ideas.
 
 # Posts
 [Setting up a personal site](./posts/2024-10-16-quick-personal-site.md).
