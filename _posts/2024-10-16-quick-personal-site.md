@@ -5,8 +5,6 @@ author:
     Rachit Shankar
 ---
 
-## The Cheapest, Fastest Landing Page 
-
 Develop, deploy, iterate. This is how progress is made, how big things are built. 
 
 The market can stay irrational longer than you can remain solvent. 
