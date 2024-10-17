@@ -9,7 +9,7 @@ author:
  email: rachitshankar@gmail.com
 
 description: > 
-  A personal site to keep track of my ideas and refine them as I learn more things. Posts start as drafts and remain WIP forever. 
+  A personal site to keep track of ideas and refine them over time. Posts start as drafts and remain WIP forever. 
 
 # theme: minima
 remote_theme: jekyll/minima 
