@@ -38,4 +38,4 @@ Here is a (cheatsheet for Markdown)[yyhttps://www.markdownguide.org/cheat-sheet/
 ##### Optionally:
 
 - Setup custom domain 
-- Use jekyll static page generation 
+- Use jekyll for making it look pretty with minimal effort 
