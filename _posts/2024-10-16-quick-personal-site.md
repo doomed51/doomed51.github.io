@@ -13,7 +13,7 @@ and
 > The market can stay irrational longer than you can remain solvent. 
 
 
-This means we must test things in the cheapest way possible. Deploying quickly makes things even cheaper. 
+This means **we must test things in the cheapest way possible**. Deploying quickly makes things even cheaper. 
 
 ---
 
