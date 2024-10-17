@@ -17,7 +17,9 @@ This means we must test things in the cheapest way possible. Deploying quickly m
 
 ---
 
-### The cheapest landing page consists of a (free) github account, and optionally a (paid) custom domain.
+### The Steps
+
+The cheapest landing page consists of a (free) github account, and optionally a (paid) custom domain.
 
 ##### Overview: 
 
