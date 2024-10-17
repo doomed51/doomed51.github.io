@@ -29,9 +29,11 @@ The cheapest landing page consists of a (free) github account, and optionally a 
     - Repository name has to be `<<account_name>>.github.io`
     - Make sure `Public` is selected 
 3. Setup [Github Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site) 
-4. Build out the custom landing page 
+4. Build out the custom landing page in Markdown 
 
-The beautiful thing about this is that **no prior coding experience is required**. Github handles all the html generation so you can focus on the content. You just need to invest ~1-2hrs into learning git 
+The beautiful thing about this is that **no prior coding experience is required**. Github handles all the html generation so you can focus on the content. You just need to invest ~1-2hrs into learning git and Markdown. 
+
+Here is a (cheatsheet for Markdown)[yyhttps://www.markdownguide.org/cheat-sheet/]
 
 ##### Optionally:
 
