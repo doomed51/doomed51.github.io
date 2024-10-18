@@ -4,24 +4,24 @@ title: "What Determines a Champion"
 author: 
     Rachit Shankar
 ---
+v5
 
-### How does one determine a champion? 
-
-Particularly when it is not a level playing field or a level playing field simply isn’t possible
+How does one determine a champion, particularly when it is not a level playing field or a level playing field simply isn’t possible?
     
     not possible when?
-        - real life...
-        - generally where “available resources” differ….differ in a way that cannot be changed/overcome by the parties in competition
+        - Real life...
+        - Generally where “available resources” differ….differ in a way that cannot be changed/overcome by all the parties in competition
 
-    what this means is that:
-        - the desired  outcomes remain the same / similar but the ability to reach them differs where ability is a function of availability….(of resources)
-        - Local optima become desirable 
+Can there be "fair" competition resulting in an objectively undeniable champion where desired outcomes are equal, but the ability to reach them is not? Where the ability to reach them is a function of **availability** [of resources]...
+
+    We should instead define a champion within some defined scope where:
+        - Local optima, constrained by availability, are made to be desirable 
         - Local optima result in localized competition 
 
-Thus, we must ask, champion of what? At **what point do the local optima differ enough** to require a different enough skillset that must in turn be **controlled by a different set of characteristics** that determine mastery within the local optima? 
+Thus, with a focus on local optima, we must ask "champion of what"? 
 
-**The definition of what it is that must be championed must be specific**. 
+At **what point do the local optima differ enough** to require a different enough skillset that must in turn be **controlled by a different set of characteristics** that determine mastery within the local optima? 
 
-And it is important to differentiate reward from attaining the mastery to be champion. 
+**The definition of what it is that must be championed must be specific**. Specific enough that there is broad enough recognition of the local optima. 
 
-**Is recognition a requirement of being “a champion”?** SomeTHING or someONE must recognize the attainment of the rank, and reward it. The reward can and should be isolated from the process of attaining the mastery to be recognized as a champion. 
+**Is recognition a requirement of being “a champion”?** SomeTHING or someONE must recognize the attainment of the rank, and reward it. The reward can be isolated from the process of attaining enough mastery to be recognized as a champion. The process in and of itself could be recognized as a local optima (but typically is not). 
