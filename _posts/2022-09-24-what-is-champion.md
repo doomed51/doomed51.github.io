@@ -8,11 +8,12 @@ author:
 ### How does one determine a champion? 
 
 Particularly when it is not a level playing field or a level playing field simply isn’t possible
-    - not possible when?
+    
+    not possible when?
         - real life...
         - generally where “available resources” differ….differ in a way that cannot be changed/overcome by the parties in competition
 
-    - what this means is that:
+    what this means is that:
         - the desired  outcomes remain the same / similar but the ability to reach them differs where ability is a function of availability….(of resources)
         - Local optima become desirable 
         - Local optima result in localized competition 
