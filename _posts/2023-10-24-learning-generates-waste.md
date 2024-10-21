@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The cheapest, fastest landing page"
+title: "Learning generrates waste"
 author: 
     Rachit Shankar
 ---
