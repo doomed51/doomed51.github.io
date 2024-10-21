@@ -2,7 +2,7 @@
 layout: post
 title: "Learning Ggenerates Waste"
 author: 
-    Rachit Shankar
+    Rachit 
 ---
 
 > Pending transfer from Notion

@@ -2,7 +2,7 @@
 layout: post
 title: "What Determines a Champion"
 author: 
-    Rachit Shankar
+    Rachit 
 ---
 v5
 

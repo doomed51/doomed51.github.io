@@ -2,7 +2,6 @@
 layout: post
 title: "[References] Digitalocean droplet setup"
 author: 
-    Rachit Shankar
 ---
 
 > Getting started

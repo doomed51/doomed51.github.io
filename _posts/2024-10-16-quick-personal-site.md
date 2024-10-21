@@ -2,7 +2,7 @@
 layout: post
 title: "The cheapest, fastest landing page"
 author: 
-    Rachit Shankar
+    Rachit 
 ---
 
 ### Two Principles for Building Useful Things
