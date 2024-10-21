@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Learning Ggenerates Waste"
+title: "Learning Generates Waste"
 author: 
     Rachit 
 ---
