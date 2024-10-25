@@ -5,9 +5,9 @@ tag: Meta
 permalink: /tags-meta/
 ---
 
-<h2>Posts tagged: Meta</h2>
+<h2>meta</h2>
 <ul class="post-list">
-  {% for post in site.tags['meta'] %}
+  {% for post in site.tags[page.meta] %}
     <li>
       <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
       <h2>
