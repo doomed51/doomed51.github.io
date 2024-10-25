@@ -7,7 +7,7 @@ permalink: /tags-meta/
 
 <h2>meta</h2>
 <ul class="post-list">
-  {% for post in site.tags[page.meta] %}
+  {% for post in site.tags[meta] %}
     <li>
       <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
       <h2>
