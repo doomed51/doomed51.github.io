@@ -1,6 +1,6 @@
 ---
 layout: tag_archive
-title: "Posts tagged: Meta"
+title: "meta"
 tag: Meta
 permalink: /tags-meta/
 ---
