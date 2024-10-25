@@ -5,12 +5,12 @@ permalink: /tags/
 ---
 
 <div class="tag-cloud">
-  {% raw %}{% assign tags = site.tags | sort %}
+  {% assign tags = site.tags | sort %}
   {% for tag in tags %}
-    <a href="/tags/{{ tag[0] | slugify }}/" class="tag-link">
+    <a href="{{ '/tags/' | append: tag[0] | slugify | relative_url }}" class="tag-link">
       {{ tag[0] }} ({{ tag[1].size }})
     </a>
-  {% endfor %}{% endraw %}
+  {% endfor %}
 </div>
 
 <style>

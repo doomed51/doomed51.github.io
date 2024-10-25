@@ -1,18 +1,40 @@
----
-layout: default
----
-<h1>Posts tagged: {{ page.title }}</h1>
-
-<ul class="post-list">
-  {% raw %}{% for post in page.posts %}
-    <li>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-      <h2>
-        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      </h2>
-      {% if post.description %}
-        <p>{{ post.description }}</p>
-      {% endif %}
-    </li>
-  {% endfor %}{% endraw %}
-</ul>
+<!-- _layouts/tag_archive.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Posts tagged: {{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header>
+    <h1>{{ site.title }}</h1>
+    <nav>
+      <ul>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+        <li><a href="{{ '/tags/' | relative_url }}">Tags</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Posts tagged: {{ page.title }}</h2>
+    <ul class="post-list">
+      {% for post in page.posts %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <h2>
+            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </h2>
+          {% if post.description %}
+            <p>{{ post.description }}</p>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </main>
+  <footer>
+    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
+  </footer>
+</body>
+</html>
