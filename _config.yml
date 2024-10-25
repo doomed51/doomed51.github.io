@@ -17,11 +17,20 @@ remote_theme: jekyll/minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-archives
 
 # link only to specific pages in the header 
 header_pages:
   - index.md
   - about.md
+
+jekyll-archives:
+  enabled:
+    - tags
+  layouts: 
+    tag: tag_archive 
+  permalinks:
+    tag: '/tags/:name/'
 
 minima: 
   skin: auto
