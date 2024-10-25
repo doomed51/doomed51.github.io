@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "[References] Digitalocean droplet setup"
-author: 
+title: "Digitalocean droplet setup"
+tags: [Guides, Technology]
+author: Rachit 
 ---
 
 > Getting started

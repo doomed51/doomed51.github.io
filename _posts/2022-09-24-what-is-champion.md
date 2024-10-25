@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "What Determines a Champion"
-author: 
-    Rachit 
+author: Rachit 
+tags: [Meta]
 ---
 v5
 

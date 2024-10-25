@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Learning Generates Waste"
+tags: [Personal Development]
 author: 
     Rachit 
 ---
@@ -21,6 +22,6 @@ Maybe you’re cooking a new recipe, or thinking back to ye olde calculus days, 
 
 How about that last morals and ethics eLearning you did…any waste out of that(other than maybe your time, dear cynical reader)? no? and did you learn anything? 
 
-Learning something generates waste. Whether it’s food, or paper, or *effort,* there is going to be waste*.*
+Learning something generates waste. Whether it’s food, or paper, or **effort**, there is going to be waste. 
 
 And if there is no waste, there probably hasn’t been much learning going on.
