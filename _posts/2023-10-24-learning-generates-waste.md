@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Learning Generates Waste"
-tags: [Personal Development]
+tags: ['Personal Development']
 author: 
     Rachit 
 ---
