@@ -4,86 +4,58 @@ title: Browse by Tag
 permalink: /tags/
 ---
 
-<div class="tags-overview">
-  {% raw %}{% assign tags_sorted = site.tags | sort %}
-  
-  {% for tag in tags_sorted %}
-    {% assign tag_slug = tag[0] %}
-    {% assign posts = tag[1] %}
-    {% assign tag_name = site.data.tags[tag_slug].name | default: tag_slug %}
-    
-    <section class="tag-section">
-      <h2 id="{{ tag_slug }}">
-        <a href="/tags/{{ tag_slug }}/">{{ tag_name }}</a>
-        <span class="post-count">({{ posts.size }})</span>
-      </h2>
-      
-      {% if site.data.tags[tag_slug].description %}
-        <p class="tag-description">
-          {{ site.data.tags[tag_slug].description }}
-        </p>
-      {% endif %}
-      
-      <ul class="post-list">
-        {% for post in posts limit:5 %}
-          <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-            <span class="post-date">
-              {{ post.date | date: "%B %-d, %Y" }}
-            </span>
-          </li>
-        {% endfor %}
-        {% if posts.size > 5 %}
-          <li class="more-link">
-            <a href="/tags/{{ tag_slug }}/">See all {{ posts.size }} posts →</a>
-          </li>
-        {% endif %}
-      </ul>
-    </section>
-  {% endfor %}{% endraw %}
-</div>
+# Browse Posts by Tag
+
+Welcome to the tags page! Here you'll find all blog posts organized by their tags. Click on a tag to see all related posts.
+
+{% raw %}
+## Tag Cloud
+
+{% include tag-cloud.html %}
+
+## All Tags
+
+{% assign tags_sorted = site.tags | sort %}
+{% for tag in tags_sorted %}
+  {% assign tag_slug = tag[0] %}
+  {% assign posts = tag[1] %}
+  {% assign tag_name = site.data.tags[tag_slug].name | default: tag_slug %}
+
+### [{{ tag_name }}](#{{ tag_slug }}) ({{ posts.size }})
+
+{% if site.data.tags[tag_slug].description %}
+> {{ site.data.tags[tag_slug].description }}
+{: .tag-description}
+{% endif %}
+
+{% for post in posts limit:5 %}
+* [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%B %-d, %Y" }}
+{% endfor %}
+
+{% if posts.size > 5 %}
+* [See all {{ posts.size }} posts tagged "{{ tag_name }}" →](/tags/{{ tag_slug }}/)
+{: .more-link}
+{% endif %}
+
+{% endfor %}
+{% endraw %}
 
 <style>
-.tags-overview {
-  margin-top: 2rem;
-}
-
-.tag-section {
-  margin-bottom: 3rem;
-}
-
-.tag-section h2 {
-  border-bottom: 2px solid #eee;
-  padding-bottom: 0.5rem;
-}
-
-.post-count {
+.tag-description {
   color: #666;
-  font-size: 0.9rem;
-}
-
-.post-list {
-  list-style: none;
-  padding-left: 0;
-}
-
-.post-list li {
-  margin-bottom: 0.5rem;
-}
-
-.post-date {
-  color: #666;
-  font-size: 0.9rem;
-  margin-left: 1rem;
+  margin: 0.5rem 0 1rem;
+  border-left-color: #ccc;
 }
 
 .more-link {
+  list-style-type: none;
   margin-top: 1rem;
   font-style: italic;
 }
 
-.tag-description {
-  color: #666;
-  margin: 0.5rem 0 1rem;
+h3 {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
 }
 </style>
