@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Digitalocean droplet setup"
-tags: [Guides, Technology]
+tags: [references]
 author: Rachit 
 ---
 

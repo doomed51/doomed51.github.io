@@ -1,0 +1,12 @@
+meta:
+  name: meta
+  description: Abstract ideas from life   
+references:
+  name: references
+  description: Useful technical references related to building things and making them work well  
+guides:
+  name: guides 
+  description: Step by step guides on getting things up and running 
+business:
+  name: business
+  description: Personal development and growth 

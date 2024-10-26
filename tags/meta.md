@@ -1,8 +1,9 @@
 ---
 layout: tag_archive
 title: "meta"
-tag: Meta
-permalink: /tags-meta/
+tag: meta
+tag_name: meta
+permalink: /tags/meta/
 ---
 
 <h2>meta</h2>

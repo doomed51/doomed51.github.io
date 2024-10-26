@@ -1,40 +1,52 @@
-<!-- _layouts/tag_archive.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Posts tagged: {{ page.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-</head>
-<body>
-  <header>
-    <h1>{{ site.title }}</h1>
-    <nav>
-      <ul>
-        <li><a href="{{ '/' | relative_url }}">Home</a></li>
-        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
-        <li><a href="{{ '/tags/' | relative_url }}">Tags</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <h2>Posts tagged: {{ page.title }}</h2>
-    <ul class="post-list">
-      {% for post in page.posts %}
-        <li>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-          <h2>
-            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          </h2>
-          {% if post.description %}
-            <p>{{ post.description }}</p>
-          {% endif %}
-        </li>
-      {% endfor %}
-    </ul>
-  </main>
-  <footer>
-    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
-  </footer>
-</body>
-</html>
+---
+layout: default
+---
+<h1 class="tag-title">Posts tagged "{{ page.tag_name }}"</h1>
+
+{% raw %}{% if site.data.tags[page.tag].description %}
+  <p class="tag-description">{{ site.data.tags[page.tag].description }}</p>
+{% endif %}
+
+<div class="post-list">
+  {% assign tag = page.tag %}
+  {% assign posts = site.tags[tag] %}
+  
+  {% for post in posts %}
+    <article class="post-preview">
+      <h2>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h2>
+      <div class="post-meta">
+        <time datetime="{{ post.date | date_to_xmlschema }}">
+          {{ post.date | date: "%B %-d, %Y" }}
+        </time>
+      </div>
+      {% if post.description %}
+        <p>{{ post.description }}</p>
+      {% endif %}
+    </article>
+  {% endfor %}{% endraw %}
+</div>
+
+<style>
+.post-list {
+  margin-top: 2rem;
+}
+
+.post-preview {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.post-meta {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.tag-description {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 2rem;
+}
+</style>
