@@ -1,5 +1,5 @@
 ---
-layout: tag_archive
+layout: tags
 title: "meta"
 tag: meta
 tag_name: meta
