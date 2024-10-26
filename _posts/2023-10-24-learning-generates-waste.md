@@ -12,16 +12,14 @@ Core principles:
 
 and 
 
-> Making mistakes is inevitable when learning 
+> Making mistakes is a big part of learning 
 
-Think about the last thing you learned or something you’re trying to learn right now. What has the process of learning it been like? did you make any mistakes? 
-
-Learning requires mistakes. That’s the bottom line. 
-
-Maybe you’re cooking a new recipe, or thinking back to ye olde calculus days, — … my guess is at some point there were a few bad meals, a mound of loose leaf…things were, objectively, wasted. 
+Think of that last thing you spent time learning. Maybe perfecting a new recipe, or deploying something useful to production. My guess is at some point there were a few bad meals, a handful of garbled configs…things were, objectively, wasted. 
 
 How about that last morals and ethics eLearning you did…any waste out of that(other than maybe your time, dear cynical reader)? no? and did you learn anything? 
 
 Learning something generates waste. Whether it’s food, or paper, or **effort**, there is going to be waste. 
 
-And if there is no waste, there probably hasn’t been much learning going on.
+If there is no waste, there likely had not been much learning going on.
+
+And if you need to measure learning for some reason, as hard it is to measure the change in behavior, it is much easier to measure waste generated [by a process]. 
