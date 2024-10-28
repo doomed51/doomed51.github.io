@@ -5,13 +5,23 @@ title: Archives
 
 <main class="container-ideal">
 
+  <!-- Collect unique tags from all posts -->
+  {%- assign unique_tags = "" | split: "" -%}
+  {%- for post in site.posts -%}
+    {%- for tag in post.tags -%}
+      {%- unless unique_tags contains tag -%}
+        {%- assign unique_tags = unique_tags | push: tag -%}
+      {%- endunless -%}
+    {%- endfor -%}
+  {%- endfor -%}
+  {%- assign unique_tags = unique_tags | sort -%}
+
   <!-- Filter form -->
   <form method="get" action="#archives">
     <label for="tag-filter">Filter by tag:</label>
     <select name="tag" id="tag-filter" onchange="this.form.submit()">
       <option value="">All</option>
-      {%- assign tags = site.tags | map: "first" | sort -%}
-      {%- for tag in tags -%}
+      {%- for tag in unique_tags -%}
         <option value="{{ tag }}" {% if tag == page.tag %}selected{% endif %}>{{ tag | capitalize }}</option>
       {%- endfor -%}
     </select>
