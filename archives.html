@@ -17,6 +17,7 @@ title: Archives
       <tr>
         <td><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %d' }}</time></td>
         <td><a href="{{ site.baseurl | prepend: site.url }}{{ post.url }}">{{ post.title }}</a></td>
+        <td>{{ post.tag | join: ', ' }}</td>
       </tr>
     {%- if forloop.last %}
     </table>{% endif %}
