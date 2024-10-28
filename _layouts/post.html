@@ -4,7 +4,7 @@ layout: page
 {{ content }}
     <article class="post">
     
-    {% if page.tags.size > 0 %}
+    {% raw %}{% if page.tags.size > 0 %}
       <div class="post-tags">
         <h4>Tags:</h4>
         {% for tag in page.tags %}
