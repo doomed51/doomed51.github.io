@@ -1,0 +1,26 @@
+---
+layout: default
+title: Archives
+---
+
+<main class="container-ideal">
+
+  <page-archives>
+    {%- for post in site.posts -%}
+    {%- assign currentdate = post.date | date: "%Y" -%}
+    {%- if currentdate != date -%}
+    {%- unless forloop.first -%}</table>{% endunless %}
+    <table>
+      <caption id='{{post.date | date: "%Y"}}'>{{ currentdate }}</caption>
+      {% assign date = currentdate %}
+      {%- endif -%}
+      <tr>
+        <td><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %d' }}</time></td>
+        <td><a href="{{ site.baseurl | prepend: site.url }}{{ post.url }}">{{ post.title }}</a></td>
+      </tr>
+    {%- if forloop.last %}
+    </table>{% endif %}
+    {% endfor %}
+  </page-archives>
+
+</main>

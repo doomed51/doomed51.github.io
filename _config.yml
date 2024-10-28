@@ -23,6 +23,7 @@ plugins:
 header_pages:
   - index.md
   - about.md
+  - archives.html
 
 jekyll-archives:
   enabled:
