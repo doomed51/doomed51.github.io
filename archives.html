@@ -14,36 +14,28 @@ title: Archives
   {%- endfor -%}
   {%- assign unique_tags = unique_tags | sort -%}
 
-  <!-- Get the selected tag from URL parameter -->
-  {%- assign selected_tag = include.tag | default: page.tag | default: "" -%}
-  
   <!-- Filter form -->
-  <form method="get" action="">
+  <form id="tag-form" method="get" action="">
     <label for="tag-filter">Filter by tag:</label>
-    <select name="tag" id="tag-filter" onchange="this.form.submit()">
+    <select name="tag" id="tag-filter">
       <option value="">All</option>
       {%- for tag in unique_tags -%}
-        <option value="{{ tag }}" {% if tag == selected_tag %}selected{% endif %}>{{ tag | capitalize }}</option>
+        <option value="{{ tag }}">{{ tag | capitalize }}</option>
       {%- endfor -%}
     </select>
   </form>
 
   <page-archives id="archives">
-    {%- assign posts = site.posts -%}
-    {%- if selected_tag != "" -%}
-      {%- assign posts = site.posts | where_exp: "post", "post.tags contains 'guides'" -%}
-    {%- endif -%}
-
     {%- assign date = "" -%}
-    {%- for post in posts -%}
+    {%- for post in site.posts -%}
       {%- assign currentdate = post.date | date: "%Y" -%}
       {%- if currentdate != date -%}
         {%- unless forloop.first -%}</table>{% endunless %}
-        <table>
+        <table class="year-table" data-year='{{post.date | date: "%Y"}}'>
           <caption id='{{post.date | date: "%Y"}}'>{{ currentdate }}</caption>
           {%- assign date = currentdate -%}
       {%- endif -%}
-      <tr>
+      <tr class="post-row" data-tags="{{ post.tags | join: ',' }}">
         <td><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %d' }}</time></td>
         <td><a href="{{ site.baseurl | prepend: site.url }}{{ post.url }}">{{ post.title }}</a></td>
         <td>{{ post.tags | join: ', ' }}</td>
@@ -51,4 +43,55 @@ title: Archives
       {%- if forloop.last -%}</table>{%- endif -%}
     {%- endfor -%}
   </page-archives>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get the tag from URL if present
+      const urlParams = new URLSearchParams(window.location.search);
+      const selectedTag = urlParams.get('tag');
+      
+      // Set the dropdown to the selected tag if present
+      if (selectedTag) {
+        document.getElementById('tag-filter').value = selectedTag;
+        filterPosts(selectedTag);
+      }
+
+      // Add change event listener to the dropdown
+      document.getElementById('tag-filter').addEventListener('change', function(e) {
+        const selectedTag = e.target.value;
+        filterPosts(selectedTag);
+        
+        // Update URL
+        const newUrl = selectedTag 
+          ? `${window.location.pathname}?tag=${selectedTag}`
+          : window.location.pathname;
+        history.pushState({}, '', newUrl);
+      });
+
+      function filterPosts(tag) {
+        const rows = document.getElementsByClassName('post-row');
+        let visibleYears = new Set();
+
+        // Show/hide rows based on tag
+        Array.from(rows).forEach(row => {
+          const postTags = row.dataset.tags.split(',');
+          const shouldShow = !tag || postTags.includes(tag);
+          row.style.display = shouldShow ? '' : 'none';
+          
+          if (shouldShow) {
+            const yearTable = row.closest('.year-table');
+            if (yearTable) {
+              visibleYears.add(yearTable.dataset.year);
+            }
+          }
+        });
+
+        // Show/hide year tables based on whether they have visible posts
+        const yearTables = document.getElementsByClassName('year-table');
+        Array.from(yearTables).forEach(table => {
+          table.style.display = visibleYears.has(table.dataset.year) ? '' : 'none';
+        });
+      }
+    });
+  </script>
 </main>
