@@ -2,9 +2,7 @@
 layout: post
 title: Archives
 ---
-
 <main class="container-ideal">
-
   <!-- Collect unique tags from all posts -->
   {%- assign unique_tags = "" | split: "" -%}
   {%- for post in site.posts -%}
@@ -16,37 +14,41 @@ title: Archives
   {%- endfor -%}
   {%- assign unique_tags = unique_tags | sort -%}
 
+  <!-- Get the selected tag from URL parameter -->
+  {%- assign selected_tag = include.tag | default: page.tag | default: "" -%}
+  
   <!-- Filter form -->
-  <form method="get" action="#archives">
+  <form method="get" action="">
     <label for="tag-filter">Filter by tag:</label>
     <select name="tag" id="tag-filter" onchange="this.form.submit()">
       <option value="">All</option>
       {%- for tag in unique_tags -%}
-        <option value="{{ tag }}" {% if tag == page.tag %}selected{% endif %}>{{ tag | capitalize }}</option>
+        <option value="{{ tag }}" {% if tag == selected_tag %}selected{% endif %}>{{ tag | capitalize }}</option>
       {%- endfor -%}
     </select>
   </form>
 
   <page-archives id="archives">
-    {%- assign selected_tag = page.tag | default: '' -%}
-    {%- for post in site.posts -%}
-      {%- if selected_tag == '' or post.tags contains selected_tag -%}
-        {%- assign currentdate = post.date | date: "%Y" -%}
-        {%- if currentdate != date -%}
-          {%- unless forloop.first -%}</table>{% endunless %}
-          <table>
-            <caption id='{{post.date | date: "%Y"}}'>{{ currentdate }}</caption>
-            {% assign date = currentdate %}
-        {%- endif -%}
-        <tr>
-          <td><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %d' }}</time></td>
-          <td><a href="{{ site.baseurl | prepend: site.url }}{{ post.url }}">{{ post.title }}</a></td>
-          <td>{{ post.tags | join: ', ' }}</td>
-        </tr>
-        {%- if forloop.last %}
-        </table>{% endif %}
-      {%- endif -%}
-    {%- endfor %}
-  </page-archives>
+    {%- assign posts = site.posts -%}
+    {%- if selected_tag != "" -%}
+      {%- assign posts = site.posts | where_exp: "post", "post.tags contains selected_tag" -%}
+    {%- endif -%}
 
+    {%- assign date = "" -%}
+    {%- for post in posts -%}
+      {%- assign currentdate = post.date | date: "%Y" -%}
+      {%- if currentdate != date -%}
+        {%- unless forloop.first -%}</table>{% endunless %}
+        <table>
+          <caption id='{{post.date | date: "%Y"}}'>{{ currentdate }}</caption>
+          {%- assign date = currentdate -%}
+      {%- endif -%}
+      <tr>
+        <td><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %d' }}</time></td>
+        <td><a href="{{ site.baseurl | prepend: site.url }}{{ post.url }}">{{ post.title }}</a></td>
+        <td>{{ post.tags | join: ', ' }}</td>
+      </tr>
+      {%- if forloop.last -%}</table>{%- endif -%}
+    {%- endfor -%}
+  </page-archives>
 </main>
