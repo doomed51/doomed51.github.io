@@ -5,7 +5,7 @@ permalink: /tags/
 ---
 
 <div class="tags-overview">
-  {% raw %}{% assign tags_sorted = site.tags | sort %}
+  {% raw %}{% assign tags_sorted = post.tags | sort %}
   
   {% for tag in tags_sorted %}
     {% assign tag_slug = tag[0] %}
