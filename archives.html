@@ -5,25 +5,38 @@ title: Archives
 
 <main class="container-ideal">
 
-  <page-archives>
+  <!-- Filter form -->
+  <form method="get" action="#archives">
+    <label for="tag-filter">Filter by tag:</label>
+    <select name="tag" id="tag-filter" onchange="this.form.submit()">
+      <option value="">All</option>
+      {%- assign tags = site.tags | map: "first" | sort -%}
+      {%- for tag in tags -%}
+        <option value="{{ tag }}" {% if tag == page.tag %}selected{% endif %}>{{ tag | capitalize }}</option>
+      {%- endfor -%}
+    </select>
+  </form>
+
+  <page-archives id="archives">
+    {%- assign selected_tag = page.tag | default: '' -%}
     {%- for post in site.posts -%}
-    {%- if post.tags contains 'guides' -%}
-      {%- assign currentdate = post.date | date: "%Y" -%}
-      {%- if currentdate != date -%}
-        {%- unless forloop.first -%}</table>{% endunless %}
-        <table>
-          <caption id='{{post.date | date: "%Y"}}'>{{ currentdate }}</caption>
-          {% assign date = currentdate %}
+      {%- if selected_tag == '' or post.tags contains selected_tag -%}
+        {%- assign currentdate = post.date | date: "%Y" -%}
+        {%- if currentdate != date -%}
+          {%- unless forloop.first -%}</table>{% endunless %}
+          <table>
+            <caption id='{{post.date | date: "%Y"}}'>{{ currentdate }}</caption>
+            {% assign date = currentdate %}
+        {%- endif -%}
+        <tr>
+          <td><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %d' }}</time></td>
+          <td><a href="{{ site.baseurl | prepend: site.url }}{{ post.url }}">{{ post.title }}</a></td>
+          <td>{{ post.tags | join: ', ' }}</td>
+        </tr>
+        {%- if forloop.last %}
+        </table>{% endif %}
       {%- endif -%}
-      <tr>
-        <td><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %d' }}</time></td>
-        <td><a href="{{ site.baseurl | prepend: site.url }}{{ post.url }}">{{ post.title }}</a></td>
-        <td>{{ post.tags | join: ', ' }}</td>
-      </tr>
-      {%- if forloop.last %}
-      </table>{% endif %}
-    {%- endif -%}
-    {% endfor %}
+    {%- endfor %}
   </page-archives>
 
 </main>
