@@ -33,6 +33,13 @@ title: Archives
         {%- unless forloop.first -%}</table>{% endunless %}
         <table class="year-table" data-year='{{post.date | date: "%Y"}}'>
           <caption id='{{post.date | date: "%Y"}}'>{{ currentdate }}</caption>
+          <thead>
+            <tr>
+              <th scope="col">Date</th>
+              <th scope="col">Title</th>
+              <th scope="col">Tags</th>
+            </tr>
+          </thead>
           {%- assign date = currentdate -%}
       {%- endif -%}
       <tr class="post-row" data-tags="{{ post.tags | join: ',' }}">
