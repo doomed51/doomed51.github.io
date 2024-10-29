@@ -1,6 +1,10 @@
 ---
 layout: post_custom
-title: "The cheapest, fastest landing page"
+title: "How to Build a Free Landing Page in One Hour Using GitHub Pages"
+description: "Step-by-step guide to create a professional landing page using GitHub Pages and Markdown. Perfect for beginners with no coding experience required."
+date: 2024-10-16
+last_modified_at: 2024-10-29
+categories: [web-development, tutorials]
 author: Rachit 
 tags: [guide]
 ---
@@ -10,10 +14,10 @@ tags: [guide]
 
 and 
 
-> The market can stay irrational longer than you can remain solvent. 
+> The market can stay irrational longer than you can remain funded. 
 
 
-This means **we must test things in the cheapest way possible**. Deploying quickly makes things even cheaper. 
+This means **we must test things in the cheapest way possible** because the market dictates what is rational. Deploying quickly makes things even cheaper. 
 
 ---
 
@@ -31,7 +35,7 @@ The cheapest landing page consists of a (free) github account, and optionally a 
 3. Setup [Github Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site) 
 4. Build out the custom landing page in Markdown 
 
-The beautiful thing about this is that **no prior coding experience is required**. Github handles all the html generation so you can focus on the content. You just need to invest ~1-2hrs into learning git and Markdown. 
+The beautiful thing about this is that **no prior coding experience is required**. Github handles all the html generation so you can focus on the content. You just need to invest 20-30 mins into learning [git](https://wizardzines.com/git-cheat-sheet.pdf) and [Markdown](https://www.markdownguide.org/cheat-sheet/). 
 
 Here is a (cheatsheet for Markdown)[yyhttps://www.markdownguide.org/cheat-sheet/]
 
