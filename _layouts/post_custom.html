@@ -9,7 +9,7 @@ layout: post
         {% for tag in page.tags %}
         {% assign tag_slug = tag %}
         {% assign tag_name = tag_slug %}
-        <a href="/tags/{{ tag_slug }}/" class="post-tag">
+        <a href="/archives.html?tag={{ tag_slug }}/" class="post-tag">
             {{ tag_name }}
         </a>
         {% endfor %}
