@@ -5,8 +5,10 @@ layout: post
 <article class="post">
 
     {{ content }}
-    post.tags.size
+    {post.tags.size}
     {% raw %}{% if post.tags.size > 0 %}
+    {post.tags.size}
+    {post.tags}
     <div class="post-tags">
     <h4>Tags:</h4>
     {% for tag in post.tags %}
