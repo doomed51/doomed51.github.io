@@ -23,14 +23,6 @@ header_pages:
   - about.md
   - archives.html
 
-jekyll-archives:
-  enabled:
-    - tags
-  layouts: 
-    tag: tag_archive 
-  permalinks:
-    tag: '/tags/:name/'
-
 minima: 
   skin: auto
 
