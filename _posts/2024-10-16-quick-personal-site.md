@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post_custom
 title: "The cheapest, fastest landing page"
 author: Rachit 
 tags: [guide]

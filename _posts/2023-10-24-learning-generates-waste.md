@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post_custom
 title: "Learning Generates Waste"
 tags: ['business']
 author: 

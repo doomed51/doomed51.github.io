@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post_custom
 title: "Github pages reference"
 tags: [reference]
 author: Rachit 

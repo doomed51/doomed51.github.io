@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post_custom
 title: "Digitalocean droplet setup"
 tags: [reference]
 author: Rachit 
