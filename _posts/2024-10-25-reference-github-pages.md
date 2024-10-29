@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Github pages reference"
-tags: [references]
+tags: [reference]
 author: Rachit 
 ---
 
