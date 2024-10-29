@@ -26,12 +26,12 @@ tags: [guide]
 
 ## Step-by-Step Guide
 
-#### 1. Create Your GitHub Account
+#### 1. Create GitHub Account
 1. Visit [GitHub's signup page](https://github.com/signup/)
 2. Choose your username carefully - it will be part of your URL
 3. Complete the registration process
 
-#### 2. Set Up Your Repository
+#### 2. Set Up Repository
 1. Navigate to "Your repositories" from the main menu
 2. Click "New" to create a repository
 3. Name it exactly as: `yourusername.github.io`
