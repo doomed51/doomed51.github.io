@@ -17,8 +17,8 @@ Pre:
 - Styling with [jekyll-minima theme ](https://github.com/jekyll/minima)
 
 Steps: 
-> Create [archives.html](https://github.com/doomed51/doomed51.github.io/blob/main/archives.html) in root folder 
+> 1. Create [archives.html](https://github.com/doomed51/doomed51.github.io/blob/main/archives.html) in root folder 
 
-> make sure post font matter has "tags: ... "
+> 2. Make sure post font matter has "tags: ... "
 
-> (optional)create a [custom layout](https://github.com/doomed51/doomed51.github.io/blob/main/_layouts/post_custom.html) in _layouts 
+> 3. [Optional] Create a [custom layout](https://github.com/doomed51/doomed51.github.io/blob/main/_layouts/post_custom.html) in _layouts 
