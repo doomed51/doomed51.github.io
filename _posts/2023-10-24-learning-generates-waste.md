@@ -6,20 +6,28 @@ author:
     Rachit 
 ---
 
+v4 
+
 Core principles:
 
-> learning results in a change in behavior 
+> Learning is a change in behavior 
 
 and 
 
-> Making mistakes is a big part of learning 
+> Mistakes are a natural part of the learning process  
 
-Think of that last thing you spent time learning. Maybe perfecting a new recipe, or deploying something useful to production. My guess is at some point there were a few bad meals, a handful of garbled configs…things were, objectively, wasted. 
+Think back to the last time you were trying to learn something. Maybe it was perfecting a new recipe or deploying something complex to production. Odds are, somewhere along the way, you had a few kitchen disasters or encountered some botched configs that, from an efficiency standpoint, were wasted time and resources.
 
-How about that last morals and ethics eLearning you did…any waste out of that(other than maybe your time, dear cynical reader)? no? and did you learn anything? 
+Now, contrast that with THE Nth time you were required to comple an ethics/compliance eLearning course. How much “waste” did that generate? Aside from a block of your time, probably not much. Did your behaviour change as a result of doing the course again? 
 
-Learning something generates waste. Whether it’s food, or paper, or **effort**, there is going to be waste. 
+While we can learn *about* something fairly quickly and efficiently, actually learning - applying that thing, by its very nature, generates waste. Whether it’s in the form of discarded ingredients, crumpled paper, used up equipment, there’s always something left behind, something used up for the practice we need to change how we behave, how we DO something. 
 
-If there is no waste, there likely had not been much learning going on.
+Tracking tangible changes in behavior can sometimes be challenging. Tracking *waste* produced by the learning process can provide a simpler method of identifying progress with respect to learning something, of a change in behavior. This isn't to say that any waste generated means learning, but by focusing on the waste two things happen
 
-And if you need to measure learning for some reason, as hard it is to measure the change in behavior, it is much easier to measure waste generated [by a process]. 
+1. It becomes easier to accept waste generation as part of the change process 
+
+and 
+
+2. You can begin to direct what kind of waste is generated, and thusly what kind of behaviors are changed 
+
+The next time you see those wasted resources, consider how you can use it to measure change towards your goal. 
