@@ -8,7 +8,7 @@ author:
 
 v5
 
-### Core Principles:
+#### Core Principles:
 
 > **Learning is a change in behavior**  
 >  
