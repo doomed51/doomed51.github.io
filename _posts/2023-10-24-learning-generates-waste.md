@@ -14,6 +14,8 @@ v5
 >  
 > **Mistakes are a natural part of the learning process**
 
+---
+
 Think back to the last time you were trying to learn something new. Maybe it was perfecting a new recipe or deploying something complex to production. Odds are, somewhere along the way, you had a few kitchen disasters or encountered some botched configs that, from an efficiency standpoint, were wasted time and resources.
 
 Now, contrast that with the umpteenth time you were required to complete an ethics or compliance eLearning course. How much “waste” did that generate? Aside from a block of your time, probably not much. And did your behavior change as a result of doing the course yet again? 
