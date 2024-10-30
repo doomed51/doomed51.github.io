@@ -10,9 +10,9 @@ v5
 
 #### Core Principles:
 
-> **Learning is a change in behavior**  
+> *Learning is a change in behavior*  
 >  
-> **Mistakes are a natural part of the learning process**
+> *Mistakes are a natural part of the learning process*
 
 ---
 
