@@ -5,9 +5,15 @@ tags: [business]
 author: Rachit 
 ---
 
-I’ve been fixing old code recently. Some of the stuff I wrote very early on relative to the lifespan of my current project. The code in question is central to the functionality of the entire system therefore gets used frequently in logic across different parts of the system.
+"What the fuck? The hell is this? uhhh...what", I quietly whisper under my breath.
 
-This is some of the most hastily written, discombobulated shit I’ve had to deal with. I know why its like it too, because all I was thinking at the time was ‘just make it work and get something useful out of it’. So I moved on from it the moment I was able to get some kind of front-end user value. I kept deferring taking better care of it. 
+I'm trying to figure out why there are two functions called _getHistoricalBars, getBars, and getBars_futures all doing the same thing. And why the functiona names are ae combination of camel case and underscore case.
+
+I’ve been fixing old code recently. Some of the stuff I wrote very early on relative to the lifespan of the current project. The code in question is central to the functionality of the entire system therefore gets used frequently in logic across different parts of the system.
+
+`This is some of the most hastily written, discombobulated shit I’ve had to deal with in quite some time. `
+
+I know why its like it too, because all I was thinking at the time was ‘just make it work and get something useful out of it’. So I moved on from it the moment I was able to get some kind of front-end user value. I kept deferring taking better care of it. 
 
 This frames technical debt in a different perspective for me. It says to me that special attention needs to be given to parts of the system that get *used* frequently as opposed to those that get *changed* frequently. Priority should be set according to frequency of use agnostic of whether it is a person or another system using the system. 
 
