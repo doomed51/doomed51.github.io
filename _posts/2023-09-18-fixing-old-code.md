@@ -1,6 +1,6 @@
 ---
 layout: post_custom
-title: Fixing Old Code
+title: Fixing old code
 tags: [business]
 author: Rachit 
 ---
