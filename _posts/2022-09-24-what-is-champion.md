@@ -1,6 +1,6 @@
 ---
 layout: post_custom
-title: "What Determines a Champion"
+title: "What determines a Champion?"
 author: Rachit 
 tags: [meta]
 ---

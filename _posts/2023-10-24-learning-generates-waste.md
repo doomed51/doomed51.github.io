@@ -1,6 +1,6 @@
 ---
 layout: post_custom
-title: "Learning Generates Waste, Make it an Advantage"
+title: "Learning generates waste"
 tags: ['business']
 author: 
     Rachit 

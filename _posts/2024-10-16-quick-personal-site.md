@@ -1,6 +1,6 @@
 ---
 layout: post_custom
-title: "How to Build a Free Landing Page in One Hour Using GitHub Pages"
+title: "building a free landing page in one hour"
 description: "Step-by-step guide to create a professional landing page using GitHub Pages and Markdown. Perfect for beginners with no coding experience required."
 date: 2024-10-16
 last_modified_at: 2024-10-29

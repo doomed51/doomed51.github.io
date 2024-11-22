@@ -1,6 +1,6 @@
 ---
 layout: post_custom
-title: "Lesser Known Git Commands That Own"
+title: "git reset --hard origin/<branch-name>"
 tags: [reference]
 author: Rachit 
 ---
