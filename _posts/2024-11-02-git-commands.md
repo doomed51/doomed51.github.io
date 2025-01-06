@@ -1,8 +1,8 @@
 ---
 layout: post_custom
-title: "Fixing "Your branch is ahead by xx commits"
+title: "Fixing 'Your branch is ahead by xx commits' Error"
 tags: [reference, git]
-author: Rachit 
+author: Rachit
 ---
 
 ### "Your branch is ahead by xx commits' 
