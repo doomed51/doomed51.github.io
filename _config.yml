@@ -2,12 +2,12 @@
 #plugins:
 #- jekyll-remote-theme # add this line to the plugins list if you already have one
 
-title: A catalogue of useful refs and peculiar protractions
+title: Tech, Trading, and Business Systems
 
 author: 
  name: Rachit S.
 
-description:  📊 Business Systems |  📈 Statistics |  📚 Dev Guides | Everything here is perpetually in beta - just like me.
+description:  📊 Business Systems |  📈 Trading |  📚 Emerging Tech | Everything here is perpetually in beta - just like me.
 
 # theme: minima
 remote_theme: jekyll/minima 
