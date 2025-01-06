@@ -1,7 +1,7 @@
 ---
 layout: post_custom
-title: "git reset --hard origin/<branch-name>"
-tags: [reference]
+title: "Fixing "Your branch is ahead by xx commits"
+tags: [reference, git]
 author: Rachit 
 ---
 
