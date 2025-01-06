@@ -1,6 +1,9 @@
 ---
 layout: home
 ---
+{% seo %}
 
-All the ideas.
+> A collection of thoughts, guides, and explorations in technology, business systems, and statistical thinking.
 
+## Recent Posts
+---

@@ -1,0 +1,43 @@
+---
+layout: post
+---
+<article class="post">
+    {% seo %}
+    {{ content }}
+    {% if page.tags.size > 0 %}
+    <div class="post-tags">
+        <h5>Tags:</h5>
+        {% for tag in page.tags %}
+        {% assign tag_slug = tag %}
+        {% assign tag_name = tag_slug %}
+        <a href="/archives.html?tag={{ tag_slug }}" class="post-tag">
+            {{ tag_name }}
+        </a>
+        {% endfor %}
+    </div>
+    {% endif %}
+</article>
+<style>
+    .post-tags {
+        margin-top: 7rem;
+        padding-top: 1rem;
+        border-top: 1px solid #eee;
+    }
+
+    .post-tag {
+        display: inline-block;
+        background: #0c0c0c;
+        padding: 0.2rem 0.85rem;
+        border-radius: 3px;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+        text-decoration: none;
+        color: #e2e0e0;
+        font-size: 0.9rem;
+    }
+
+    .post-tag:hover {
+        background: #535050;
+        text-decoration: none;
+    }
+</style>

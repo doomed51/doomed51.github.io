@@ -2,13 +2,12 @@
 #plugins:
 #- jekyll-remote-theme # add this line to the plugins list if you already have one
 
-title: Rachit's Catalogue
+title: A catalogue of useful refs and peculiar protractions
 
 author: 
  name: Rachit S.
 
-description: > 
-  A personal site to keep track of ideas and refine them over time. Posts start as drafts and remain WIP forever. 
+description:  📊 Business Systems |  📈 Statistics |  📚 Dev Guides | Everything here is perpetually in beta - just like me.
 
 # theme: minima
 remote_theme: jekyll/minima 
@@ -22,14 +21,7 @@ plugins:
 header_pages:
   - index.md
   - about.md
-
-jekyll-archives:
-  enabled:
-    - tags
-  layouts: 
-    tag: tag_archive 
-  permalinks:
-    tag: '/tags/:name/'
+  - archives.html
 
 minima: 
   skin: auto

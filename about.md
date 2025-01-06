@@ -3,5 +3,6 @@ layout: page
 title: About
 permalink: /about/
 ---
+{% seo %}
 
-I am an engineer with a background in operations research, and 10 years of engineering large scale process changes affecting all major business functions. I enjoy applying my understanding of statistics and human behavior to everyday life. 
+I'm an operations research engineer who finds joy in untangling complex systems. Over the past 10 years, I've architected large-scale process changes integrating lean engineering practices with human behavior. This site is a catalogue of business systems ideas, the nature of work, and technical manuals. 

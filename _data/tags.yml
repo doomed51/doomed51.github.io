@@ -2,10 +2,10 @@ meta:
   name: meta
   description: Abstract ideas from life   
 references:
-  name: references
+  name: reference
   description: Useful technical references related to building things and making them work well  
 guides:
-  name: guides 
+  name: guide
   description: Step by step guides on getting things up and running 
 business:
   name: business
