@@ -58,6 +58,7 @@ Data Analysis: R, Excel, Matlab, MySQL, HuggingFace
 
 ## 🎯 Leadership Philosophy
 - Enable autonomy, expect excellence 
+- Everyone has something we can learn from 
 - Eschew theory for application (Test & Learn)
 - Iterate, iterate, iterate 
 
